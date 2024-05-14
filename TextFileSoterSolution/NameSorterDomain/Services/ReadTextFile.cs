@@ -2,7 +2,7 @@
 
 namespace NameSorterDomain.Services
 {
-    public class TextReader : ITextReader
+    public class ReadTextFile : ITextReader
     {
         public List<string> ReadFromFile(string filePath)
         {

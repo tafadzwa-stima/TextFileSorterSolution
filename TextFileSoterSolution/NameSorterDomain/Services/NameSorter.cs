@@ -1,6 +1,8 @@
-﻿namespace NameSorterDomain.Services
+﻿using NameSorterDomain.Interfaces;
+
+namespace NameSorterDomain.Services
 {
-    public class NameSorter
+    public class NameSorter:INameSorter
     {
         public IEnumerable<string> SortNames(IEnumerable<string> namesList)
         {
