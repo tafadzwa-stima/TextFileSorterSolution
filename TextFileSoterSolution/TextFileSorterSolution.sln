@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSorterUI", "FileSorterUI\FileSorterUI.csproj", "{6AEA8EF1-467F-4B30-9BCE-57C56F4152E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameSorterDomain", "NameSorterDomain\NameSorterDomain.csproj", "{C8C898EB-CA26-4A7D-AB28-5C7DF238F503}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6AEA8EF1-467F-4B30-9BCE-57C56F4152E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AEA8EF1-467F-4B30-9BCE-57C56F4152E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AEA8EF1-467F-4B30-9BCE-57C56F4152E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C898EB-CA26-4A7D-AB28-5C7DF238F503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C898EB-CA26-4A7D-AB28-5C7DF238F503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C898EB-CA26-4A7D-AB28-5C7DF238F503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C898EB-CA26-4A7D-AB28-5C7DF238F503}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
