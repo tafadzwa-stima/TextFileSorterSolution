@@ -19,36 +19,39 @@ namespace FileSorterUI
 
         public void Run(string[] args)
         {
-            //if (args.Length != 1)
-            //{
-            //    Console.WriteLine("usage: FileSorterUI.exe <inputfilename>");
-            //    return;
-            //}
+            if (args.Length != 1)
+            {
+                Console.WriteLine("usage: filesorterui.exe <inputfilename>");
+                return;
+            }
 
-            string inputfilePath = @"C:\src\File Sorter\unsortedListOfNames.txt";
+            string inputfilePath = args[0]; 
 
             //Read Names From File
             var names = _textReader.ReadFromFile(inputfilePath);
 
             //Sorting
             var sortedNames= new List<string>();  
+                     
 
             if (names != null) 
             {
                 sortedNames =_nameSorter.SortNames(names).ToList();
             }
 
-            Console.WriteLine("sorted");
+            //Print Sorted List
+            foreach ( var name in sortedNames ) 
+            {
+                Console.WriteLine(name);
+            }
+                       
             //OverWrite sorted names to text file
 
             _writer.WriteNamesToTextFile(sortedNames);
 
+            Console.WriteLine("Done with file sorting operation ");
 
-            Console.WriteLine("Done");
-
-            
-
-
+           
         }
 
     }
