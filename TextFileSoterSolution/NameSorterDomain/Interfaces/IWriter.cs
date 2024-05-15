@@ -2,6 +2,6 @@
 {
     public interface IWriter
     {
-        void WriteNamesToTextFile(string filePath, List<string>names);
+        void WriteNamesToTextFile(List<string>names);
     }
 }

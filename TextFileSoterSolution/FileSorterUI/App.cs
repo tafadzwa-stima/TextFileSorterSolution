@@ -41,7 +41,7 @@ namespace FileSorterUI
             Console.WriteLine("sorted");
             //OverWrite sorted names to text file
 
-            _writer.WriteNamesToTextFile(inputfilePath,sortedNames);
+            _writer.WriteNamesToTextFile(sortedNames);
 
 
             Console.WriteLine("Done");
