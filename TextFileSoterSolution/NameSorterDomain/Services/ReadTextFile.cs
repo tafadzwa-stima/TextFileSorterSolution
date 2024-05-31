@@ -13,7 +13,7 @@ namespace NameSorterDomain.Services
                
                 using (StreamReader reader = new StreamReader(filePath))
                 {
-                    string line;
+                    string? line;
                     
                     while ((line = reader.ReadLine()) != null)
                     {

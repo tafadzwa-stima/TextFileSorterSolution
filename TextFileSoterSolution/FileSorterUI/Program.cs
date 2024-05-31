@@ -26,9 +26,13 @@ static IHostBuilder CreateHostBuilder(string[] args)
     return Host.CreateDefaultBuilder(args)
         .ConfigureServices((_, services) =>
         {
+            //Todo : need to revise new changes and add fluent assertions to Unittests
             services.AddSingleton<IWriter,WriteName>();
-            services.AddSingleton<INameSorter, NameSorter>();
+            services.AddSingleton<INameSorter,NameSorter>();
+            services.AddSingleton<INameSorter, ReverseSortNames>();
+            services.AddSingleton<INameSorter,SortNameByFirstNames>();
             services.AddSingleton<ITextReader, ReadTextFile>();
             services.AddSingleton<App>();
         });
 }
+  

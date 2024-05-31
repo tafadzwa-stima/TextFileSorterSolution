@@ -1,4 +1,4 @@
-﻿using NameSorterDomain.Interfaces;
+﻿  using NameSorterDomain.Interfaces;
 
 namespace FileSorterUI
 {
